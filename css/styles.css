@@ -143,17 +143,20 @@ img {
 /* MAIN */
 /* ШАПКА */
 .hat {
-    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+    text-align: center; 
 
     background-color: var(--secondary-background-color);
 }
 .hat-title {
-    margin-left: 226px;
-    margin-right: 226px;
+    
     width: 696px;
-    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
-    margin-bottom: 30px;
+    
 
     color: var(--hat-text-color);
 
@@ -166,8 +169,7 @@ img {
 }
 
 .hat-text {
-    display: inline-block;
-    border-radius: 4px;
+    
     padding: 10px 32px;
     min-width: 216px;
 
@@ -182,10 +184,6 @@ img {
     cursor: pointer;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.text-order {
-    padding-bottom: 200px;
 }
 
 .hat-text:hover,
@@ -205,11 +203,13 @@ img {
         clip-path: inset(50%);
         margin: -1px;
 }
+.trait {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* Флекс Особливості */
 .features {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .item {
@@ -244,9 +244,11 @@ img {
 
 /* Чим ми займаємось */
 /* Флекс */
+.we-do {
+    padding-bottom: 94px;
+}
 .work {
     display: flex;
-    padding-bottom: 94px;
 }
 
 .work>.item {
@@ -272,7 +274,7 @@ img {
 /* Флекс */
 .team {
     display: flex;
-    padding-bottom: 94px;
+   
 }
 
 .team .item+.item {
@@ -280,16 +282,16 @@ img {
 }
 
 .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--team-background-color);
 }
 
-.title {
-    padding-top: 94px;
-}
-
 .team-title {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
+    
 
     background-color: var(--hat-text-color);
 
@@ -312,6 +314,7 @@ img {
 }
 
 .bottom-line {
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 
@@ -327,9 +330,9 @@ img {
 
 .filters {
     display: flex;
-    padding-top: 94px;
     justify-content: center;
     align-items: baseline;
+    margin-bottom: 34px;
 }
 
 .btn {
@@ -402,23 +405,20 @@ img {
 
 /* Розділи */
 /* Флекс-сітка */
-
+.port {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .project {
+    gap: var(--card-set-gap);
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
-    padding-top: 50px;
-
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+      
 }
 
 .pr-item {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);       
 }
-
 .card-conten {
     padding: 20px 24px;
     background: var(--hat-text-color);
@@ -459,12 +459,12 @@ img {
 /* ПІДВАЛ */
 
 .bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--secondary-background-color);
 }
-
 .bg-logo {
     display: block;
-    padding-top: 60px;
     margin-bottom: 20px;
 
     color: var(--accent-color);
@@ -509,14 +509,10 @@ img {
     color: var(--accent-color);
 }
 
-.bg-address {
-    padding-bottom: 60px;
-}
-
 .a-mail {
     margin-bottom: 9px;
 }
 
-/* section, header, footer { */
-    /* outline: 2px solid blue; */
-/* } */
+/* section, header, footer {  */
+    /* outline: 2px solid blue;  */
+/* }  */
