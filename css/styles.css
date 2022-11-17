@@ -172,6 +172,7 @@ img {
     
     padding: 10px 32px;
     min-width: 216px;
+    border: none;
 
     color: var(--hat-text-color);
     background-color: var(--accent-color);
@@ -348,9 +349,9 @@ img {
     letter-spacing: 0.03em;
     cursor: pointer;
 
-    box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1), 
-    0px 1px 2px rgba(0, 0, 0, 0.08), 
-    0px 2px 2px rgba(0, 0, 0, 0.12);  
+    /* box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1),  */
+    /* 0px 1px 2px rgba(0, 0, 0, 0.08),  */
+    /* 0px 2px 2px rgba(0, 0, 0, 0.12);   */
 }
 
 .filters .filter-item+.filter-item {
@@ -437,7 +438,7 @@ img {
 
 .project-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
